@@ -44,4 +44,8 @@ const slicer1 = createSlice({
         })
     }
 })
+export default slicer1.reducer;
+export {FetchData};
+
 // extraReducers for async fns
+// actions name=>coin/fetch/pending does not contain slice name so we use extraReducers
