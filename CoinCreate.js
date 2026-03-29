@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { FetchData } from "./slicer1";
-import CoinCard from "./CoinCard";
+import CoinCard from "./";
 
 export default function CoinCreate(){
     
