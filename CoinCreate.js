@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { FetchData } from "./slicer1";
-import CoinCard from "./";
+import CoinCard from "./CoinCard";
 
 export default function CoinCreate(){
     
@@ -10,6 +10,7 @@ export default function CoinCreate(){
 
     useEffect(()=>{
         dispatch(FetchData(20));
+        // here FetchData is not a action it is a fn so it will call FetchData before sending it to store=>this is done by 'MiddleWare' 
     },[])
 
     // Display information of 20 user

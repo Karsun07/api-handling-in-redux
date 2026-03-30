@@ -49,3 +49,5 @@ export {FetchData};
 
 // extraReducers for async fns
 // actions name=>coin/fetch/pending does not contain slice name so we use extraReducers
+// since slice name is not mentioned it goes to stores and it goes to all slices so that we can display full data
+
