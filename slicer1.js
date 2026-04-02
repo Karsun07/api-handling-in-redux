@@ -1,7 +1,11 @@
 import { createAsyncThunk,  createSlice } from "@reduxjs/toolkit";
 
 
-// createAsyncThunk
+// createAsyncThunk-creates a thunk (an async action) that automatically dispatches three action types:
+
+// pending → when request starts
+// fulfilled → when it succeeds
+// rejected → when it fails
 
 // {type: 'coin/fetch/pending' , payload: undefined}
 // {type: 'Coin/fetch/fullfiled' , payload:data}
